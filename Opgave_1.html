@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       <p>Tryk for at få en gave</p>
+       <p id="demo" class="myStyle"></p>
+       <style>
+       .myStyle {
+            width:100%;
+            padding:25px;
+            color:red;
+            font-size:25px;
+            box-sizing:border-box;
+            animation-name: example;
+            animation-duration:5.5s;
+       }
+
+       @keyframes example {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+    </style>
+            <button onclick="displayDate()">Det er mig!</button>
+            <audio id="myAudio">
+                    <source src="OOF.mp3" type="audio/mpeg">
+                </audio>
+            <script>
+                var x = document.getElementById("myAudio");
+                    function displayDate() {
+                        document.getElementById("demo").innerHTML = Date();
+                        x.play();
+                    }
+                    
+                    
+            </script>
+    </body>
+</html>
+
